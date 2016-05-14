@@ -12,7 +12,7 @@ echo "rsyncing ${source} -> ${destination}"
 mkdir -p "${destination}"
 
 # Test (-anv)
-rsync --archive --verbose --dry-run "${source}" "${destination}"
+# rsync --archive --verbose --dry-run "${source}" "${destination}"
 
 # Run (-aP)
-# rsync --archive --partial --progress "${source}" "${destination}"
+rsync --archive --partial --progress "${source}" "${destination}"
